@@ -1,0 +1,47 @@
+ [1] "age"           "workclass"     "education"     "educationno"   "maritalstatus" "occupation"    "relationship" 
+ [8] "race"          "sex"           "capitalgain"   "capitalloss"   "hoursperweek"  "native"        "Salary"  
+
+
+'data.frame':	30161 obs. of  14 variables:
+ $ age          : int  39 50 38 53 28 37 49 52 31 42 ...
+ $ workclass    : chr  " State-gov" " Self-emp-not-inc" " Private" " Private" ...
+ $ education    : chr  " Bachelors" " Bachelors" " HS-grad" " 11th" ...
+ $ educationno  : int  13 13 9 7 13 14 5 9 14 13 ...
+ $ maritalstatus: chr  " Never-married" " Married-civ-spouse" " Divorced" " Married-civ-spouse" ...
+ $ occupation   : chr  " Adm-clerical" " Exec-managerial" " Handlers-cleaners" " Handlers-cleaners" ...
+ $ relationship : chr  " Not-in-family" " Husband" " Not-in-family" " Husband" ...
+ $ race         : chr  " White" " White" " White" " Black" ...
+ $ sex          : chr  " Male" " Male" " Male" " Male" ...
+ $ capitalgain  : int  2174 0 0 0 0 0 0 0 14084 5178 ...
+ $ capitalloss  : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ hoursperweek : int  40 13 40 40 40 40 16 45 50 40 ...
+ $ native       : chr  " United-States" " United-States" " United-States" " United-States" ...
+ $ Salary       : chr  " <=50K" " <=50K" " <=50K" " <=50K" ...
+
+
+salary - two labels
+sex - two labels 
+workclass  - many labels 
+maritalstatus: - many labels 
+occupation   - many labels 
+relationship - many labels
+race         - many labels 
+native       - many labels
+
+
+> head(cbind(p, s_train$Salary))
+     0                   1                              
+[1,] "0.747395314935716" "0.252604685064284"    " <=50K"
+[2,] "0.94959876283263"  "0.0504012371673695"   " <=50K"
+[3,] "0.994148275492422" "0.0058517245075777"   " <=50K"
+[4,] "0.990670256656699" "0.00932974334330153"  " <=50K"
+[5,] "0.999951225332002" "4.87746679974565e-05" " <=50K"
+[6,] "0.996783731331346" "0.00321626866865432"  " <=50K"
+
+accuracy train befor kernal 
+0.7903253
+0.7957296 - kernal
+
+accruracy test befor kernal 
+0.789575
+0.8027224

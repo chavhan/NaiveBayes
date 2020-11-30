@@ -1,5 +1,3 @@
-Naive Bayes 
-
 README
 Ajit Chavhan
 30/11/2020
